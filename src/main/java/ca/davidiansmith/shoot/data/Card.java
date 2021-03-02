@@ -2,19 +2,16 @@ package ca.davidiansmith.shoot.data;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
+@RequiredArgsConstructor
 @EqualsAndHashCode
+@ToString
 public final class Card {
 	
-	@Getter
-	private final Rank rank;
-	@Getter
-	private final Suit suit;
-	
-	private Card(Rank rank, Suit suit) {
-		this.rank = rank;
-		this.suit = suit;
-	}
+	@Getter private final Rank rank;
+	@Getter private final Suit suit;
 	
 	public static Card getCardFromCode(String code) throws IllegalArgumentException {
 		if (2 != code.length())

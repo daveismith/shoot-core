@@ -195,4 +195,13 @@ public class CardTest {
 	public void equalsContract() {
 	    EqualsVerifier.forClass(Card.class).verify();
 	}
+	
+	@Test
+	public void testToString() {
+		Card c = Card.getCardFromCode("AC");
+		assertEquals("Card(rank=ACE, suit=CLUBS)", c.toString());
+
+		c = Card.getCardFromCode("9D");
+		assertEquals("Card(rank=NINE, suit=DIAMONDS)", c.toString());		
+	}
 }

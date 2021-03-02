@@ -1,7 +1,5 @@
-package ca.davidiansmith.shoot;
+package ca.davidiansmith.shoot.data;
 
-import ca.davidiansmith.shoot.data.Rank;
-import ca.davidiansmith.shoot.data.Suit;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

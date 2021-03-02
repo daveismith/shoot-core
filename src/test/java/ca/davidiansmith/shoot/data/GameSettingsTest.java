@@ -1,9 +1,11 @@
-package ca.davidiansmith.shoot;
+package ca.davidiansmith.shoot.data;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import ca.davidiansmith.shoot.data.GameSettings;
 
 public class GameSettingsTest {
 
